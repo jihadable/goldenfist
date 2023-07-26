@@ -1,1 +1,27 @@
-plan
+Golden Fist
+
+Golden fist is a martial arts school that provides the best experience for your marvelous journey.
+
+colors:
+gold: #FFD700
+blue: #005B99
+white: #F3F4F6
+
+pages:
+home, about us, pricing, contact
+
+constant's element:
+navbar: logo, links
+footer: 
+left: logo, tagline, 
+right: sosmed links, privacy policy, copyright
+
+home page:
+hero: bg-image, tagline: Unleash Your Inner Warrior
+principle: Focus, Discipline, Resilience
+gallery: 6 photos
+testimonials: 3 people
+prices: 
+$40/m: 1 meeting for a week
+$65/m: 2 meeting for a week
+$100/m: 3 meeting for a week

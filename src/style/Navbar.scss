@@ -1,0 +1,44 @@
+@import "./index.scss";
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .4rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+
+    &-logo{
+        display: flex;
+
+        img{
+            width: 4rem;
+        }
+    }
+
+    &-links{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        font-size: 1.1rem;
+
+        a{
+            display: flex;
+            align-items: center;
+            gap: 0.2rem;
+            
+            span{
+                transition: all .2s;
+            }
+
+            &:hover{
+                span{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
