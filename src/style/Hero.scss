@@ -2,21 +2,60 @@
 
 .hero{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-image: url("../assets/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 
     .tagline{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
         font-size: 3rem;
         font-weight: 700;
         color: $blue;
-        text-shadow: 0 0 20px rgb(255,255,255,.3);
 
         span{
             color: $gold;
+        }
+    }
+
+    .principles{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 2rem;
+        width: 100%;
+        position: absolute;
+        bottom: -28vh;
+
+        .principle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $white;
+            box-shadow: 0 0 20px -2px rgb(0,0,0,.2);
+            padding: 1.5rem;
+            border-radius: 3rem 3rem .2rem .2rem;
+
+            svg{
+                width: 4rem;
+                height: 4rem;
+                color: $blue;
+            }
+
+            &-header{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            &-text{
+                text-align: center;
+            }
         }
     }
 }
