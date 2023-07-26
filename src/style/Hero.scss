@@ -1,0 +1,22 @@
+@import "./index.scss";
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .tagline{
+        font-size: 3rem;
+        font-weight: 700;
+        color: $blue;
+        text-shadow: 0 0 20px rgb(255,255,255,.3);
+
+        span{
+            color: $gold;
+        }
+    }
+}

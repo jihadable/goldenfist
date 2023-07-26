@@ -9,7 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $white;
+    background-color: rgb(255,255,255,.1);
+    backdrop-filter: blur(10px);
 
     &-logo{
         display: flex;
@@ -31,13 +32,7 @@
             gap: 0.2rem;
             
             span{
-                transition: all .2s;
-            }
-
-            &:hover{
-                span{
-                    color: $blue;
-                }
+                color: $white;
             }
         }
     }

@@ -1,7 +1,65 @@
+@import "./index.scss";
+
 .footer{
     width: 100%;
     padding: 4rem;
     background-color: $white;
     display: flex;
     justify-content: space-between;
+
+    &-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo{
+            display: flex;
+    
+            img{
+                width: 6rem;
+            }
+        }
+
+        .tagline{
+            font-family: 'Edu SA Beginner', cursive;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        .footer-links{
+            display: flex;
+            gap: 1rem;
+    
+            .link{
+                cursor: pointer;
+    
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .sosmed-links{
+            display: flex;
+            gap: 1rem;
+
+            .link{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.5rem;
+                border-radius: 50%;
+                background-color: rgb(0, 91, 153,.1);
+                cursor: pointer;
+            }
+        }
+    }
+
 }
