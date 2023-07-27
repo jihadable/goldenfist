@@ -34,6 +34,11 @@
             
             span{
                 color: $white;
+                transition: all .2s;
+
+                &.black{
+                    color: black;
+                }
             }
         }
 
@@ -50,7 +55,6 @@
 @media screen and (max-width: 480px) {
     .navbar{
         padding: .4rem 5%;
-        // overflow: h;
 
         &-links{
             position: absolute;

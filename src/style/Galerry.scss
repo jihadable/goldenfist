@@ -1,11 +1,34 @@
+@import "./index.scss";
+
 .galerry{
     width: 80vw;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     padding-top: 16rem;
     padding-bottom: 5rem;
+
+    &-header{
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Edu SA Beginner', cursive;
+        margin-bottom: 1rem;
+        text-align: center;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 4rem;
+            background-color: $gold;
+            border-radius: 5rem;
+        }
+    }
 
     &-top,&-bottom{
         display: flex;

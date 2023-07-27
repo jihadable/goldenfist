@@ -23,7 +23,7 @@ export default function Testimonials(){
         {
             name: "William Miller",
             job: "Cop",
-            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quaerat accusantium laborum iusto veniam placeat quisquam corporis. Quae, doloremque molestiae?`,
+            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quaerat accusantium laborum iusto veniam placeat quisquam corporis. Quae, doloremque molestiae.`,
             img: test3
         }
     ]

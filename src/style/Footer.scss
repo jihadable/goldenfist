@@ -68,5 +68,13 @@
             color: $white;
         }
     }
+}
 
+@media screen and (max-width: 480px) {
+    .footer{
+        flex-direction: column;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        gap: 2rem;
+    }
 }

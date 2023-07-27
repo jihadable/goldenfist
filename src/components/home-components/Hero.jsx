@@ -60,7 +60,7 @@ function Principles(){
         {
             principles.map((principle, index) => {
                 return (
-                    <div className="principle">
+                    <div className="principle" key={index}>
                         {principle.svg}
                         <div className="principle-header">{principle.header}</div>
                         <div className="principle-text">{principle.text}</div>
