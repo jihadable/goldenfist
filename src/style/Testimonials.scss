@@ -1,0 +1,167 @@
+@import "./index.scss";
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 80vw;
+    margin-bottom: 5rem;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: .2rem;
+            background-color: $gold;
+            bottom: 0;
+            right: 0;
+            border-radius: 10rem;
+        }
+    }
+
+    &-container{
+        width: 100%;
+        display: flex;
+        overflow-x: hidden;
+            
+        .testimonial-content{
+            display: flex;
+            gap: 2rem;
+            padding-top: 3rem;
+            transition: all .5s;
+
+            &.test1{
+                transform: translateX(calc(-80vw - 2rem));
+            }
+            
+            &.test2{
+                transform: translateX(calc(-160vw - 4rem));
+            }
+
+            .testimonial{
+                display: flex;
+                border: 1rem solid #ccc;
+                padding: 2rem;
+                width: 80vw;
+                position: relative;
+                
+                &-info{
+                    display: flex;
+                    gap: 1rem;
+
+                    .img{
+                        display: flex;
+                        position: absolute;
+                        bottom: 2rem;
+
+                        img{
+                            width: 20vw;
+                            border-radius: 0 5rem 0 0;
+                        }
+                    }
+
+                    .test-info{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 1rem 0;
+                        padding-left: calc(20vw + 1rem);
+                        padding-right: 1rem;
+                        background-color: $blue;
+
+                        img{
+                            width: 3rem;
+                        }
+
+                        .text{
+                            font-size: 1.5rem;
+                        }
+
+                        .name{
+                            margin-top: 2rem;
+                            font-size: 1.2rem;
+                            font-weight: 700;
+                            color: $white;
+                        }
+
+                        .job{
+                            font-size: .8rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btns{
+        display: flex;
+        gap: 1rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+
+        .left,.right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255,255,255,.3);
+            backdrop-filter: blur(.2rem);
+            width: 3rem;
+            height: 3rem;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 0 20px -2px rgb(0,0,0,.3);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonials{
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+        gap: 1rem;
+
+        &-container{
+            overflow-x: auto;
+
+            .testimonial-content{
+                padding-top: 0;
+                gap: 1rem;
+
+                .testimonial{
+                    width: calc(100vw - 2rem);
+                    border: none;
+                    padding: 0;
+
+                    &-info{
+                        flex-direction: column;
+
+                        .img{
+                            position: static;
+
+                            img{
+                                width: 100%;
+                            }
+                        }
+
+                        .test-info{
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btns{
+            display: none;
+        }
+    }
+}

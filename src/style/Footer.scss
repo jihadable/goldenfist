@@ -4,6 +4,7 @@
     width: 100%;
     padding: 4rem;
     background-color: $white;
+    background-color: $black;
     display: flex;
     justify-content: space-between;
 
@@ -39,6 +40,7 @@
     
             .link{
                 cursor: pointer;
+                color: $white;
     
                 &:hover{
                     text-decoration: underline;
@@ -57,8 +59,13 @@
                 padding: 0.5rem;
                 border-radius: 50%;
                 background-color: rgb(0, 91, 153,.1);
+                background-color: rgb(255, 215, 0,.1);
                 cursor: pointer;
             }
+        }
+
+        .copyright{
+            color: $white;
         }
     }
 

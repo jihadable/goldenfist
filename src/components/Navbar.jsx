@@ -1,13 +1,17 @@
+import { useState } from "react"
 import logo from "../assets/golden-fist-logo.png"
 import "../style/Navbar.scss"
 
 export default function Navbar(){
+
+    const [showMobileMenu, setShowMobileMenu] = useState(false)
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
                 <img src={logo} alt="Logo" />
             </div>
-            <div className="navbar-links">
+            <div className={`navbar-links ${showMobileMenu ? "active" : ""}`}>
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -48,6 +52,21 @@ export default function Navbar(){
                     </svg>
                     <span>Contact</span>
                 </a>
+                <div className="close-btn" onClick={() => {setShowMobileMenu(false)}}>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M18 6l-12 12"></path>
+                        <path d="M6 6l12 12"></path>
+                    </svg>
+                </div>
+            </div>
+            <div className="navbar-mobile-btn" onClick={() => {setShowMobileMenu(true)}}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-deep" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6h16"></path>
+                    <path d="M7 12h13"></path>
+                    <path d="M10 18h10"></path>
+                </svg>
             </div>
         </nav>
     )

@@ -62,3 +62,30 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .galerry{
+        width: 100%;
+        padding: 52rem 1rem;
+        padding-bottom: 0;
+
+        &-top,&-bottom{
+            flex-direction: column;
+            width: 100%;
+
+            .img1,.img2,.img5,.img6{
+                width: calc(100vw - 2rem);
+                height: calc(100vw - 2rem);
+            }
+
+            .img3,.img4{
+                width: calc(100vw - 2rem);
+                height: calc((100vw - 2rem)/2);
+            }
+        }
+
+        &-bottom{
+            flex-direction: column-reverse;
+        }
+    }
+}
