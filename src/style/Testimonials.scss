@@ -165,3 +165,44 @@
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .testimonials{
+        width: 90vw;
+
+        &-container{
+            .testimonial-content{
+                padding-top: 1rem;
+
+                &.test1{
+                    transform: translateX(calc(-90vw - 2rem));
+                }
+                
+                &.test2{
+                    transform: translateX(calc(-180vw - 4rem));
+                }
+
+                .testimonial{
+                    width: 90vw;
+                    padding: 1rem;
+                    border: .5rem solid #ccc;
+
+                    &-info{
+
+                        .test-info{
+                            font-size: 1rem;
+
+                            .text{
+                                font-size: 1.3rem;
+                            }
+
+                            .name{
+                                margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

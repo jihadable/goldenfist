@@ -100,3 +100,22 @@
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .galerry{
+        width: 90vw;
+        padding-top: 20rem;
+
+        &-top,&-bottom{
+            .img1,.img2,.img5,.img6{
+                width: calc((45vw - 1.5rem)/2);
+                height: calc((45vw - 1.5rem)/2);
+            }
+
+            .img3,.img4{
+                width: calc(45vw - .5rem);
+                height: calc((45vw - 1.5rem)/2);
+            }
+        }
+    }
+}

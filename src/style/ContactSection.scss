@@ -1,0 +1,26 @@
+@import "./index.scss";
+
+.contact{
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: 700;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 20%;
+            right: 0;
+            bottom: 0;
+            height: .3rem;
+            border-radius: 5rem;
+            background-color: $gold;
+        }
+    }
+}
