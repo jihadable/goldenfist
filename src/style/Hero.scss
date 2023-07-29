@@ -76,3 +76,14 @@
         }
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .hero{
+        background-position: center;
+
+        .principles{
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+    }
+}

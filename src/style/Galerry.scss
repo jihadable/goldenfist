@@ -16,18 +16,6 @@
         font-family: 'Edu SA Beginner', cursive;
         margin-bottom: 1rem;
         text-align: center;
-        position: relative;
-
-        &::after{
-            content: "";
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            height: 3px;
-            width: 4rem;
-            background-color: $gold;
-            border-radius: 5rem;
-        }
     }
 
     &-top,&-bottom{

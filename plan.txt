@@ -1,4 +1,4 @@
-Golden Fists
+Golden Fist
 
 Golden fist is a martial arts school that provides the best experience for your marvelous journey.
 
@@ -22,6 +22,14 @@ principle: Focus, Discipline, Resilience
 gallery: 6 photos
 testimonials: 3 people
 prices: 
+$40/m: 1 meeting for a week
+$65/m: 2 meeting for a week
+$100/m: 3 meeting for a week
+
+pricing page:
+pricing section: 
+header: pricing chart
+content:
 $40/m: 1 meeting for a week
 $65/m: 2 meeting for a week
 $100/m: 3 meeting for a week

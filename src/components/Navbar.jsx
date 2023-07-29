@@ -2,20 +2,9 @@ import { useState } from "react"
 import logo from "../assets/golden-fist-logo.png"
 import "../style/Navbar.scss"
 
-export default function Navbar(){
+export default function Navbar(props){
     
-    window.onscroll = function() {myFunction()};
-
-    const [scrollLimit, setScrollLimit] = useState(false)
-
-    window.addEventListener("scroll", function(){
-        if (document.documentElement.scrollTop > window.innerHeight){
-            setScrollLimit(true)
-        }
-        else {
-            setScrollLimit(false)
-        }
-    })
+    const scrollLimit = props.scrollLimit;
 
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 
