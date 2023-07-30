@@ -4,6 +4,9 @@ import Footer from "../components/Footer"
 import ContactHero from "../components/contact-components/ContactHero";
 
 export default function Contact(){
+
+    document.title = "Golden Fist | Contact"
+
     return (
         <>
         <Navbar scrollLimit={true} />

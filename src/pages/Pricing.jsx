@@ -4,6 +4,9 @@ import Footer from "../components/Footer"
 import PricingHero from "../components/pricing-components/PricingHero";
 
 export default function Pricing(){
+
+    document.title = "Golden Fist | Pricing"
+
     return (
         <>
         <Navbar />
