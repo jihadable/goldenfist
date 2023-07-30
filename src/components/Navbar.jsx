@@ -3,8 +3,19 @@ import logo from "../assets/golden-fist-logo.png"
 import "../style/Navbar.scss"
 
 export default function Navbar(props){
-    
-    const scrollLimit = props.scrollLimit;
+
+    window.onscroll = function() {myFunction()};
+
+    const [scrollLimit, setScrollLimit] = useState(false)
+
+    window.addEventListener("scroll", function(){
+        if (document.documentElement.scrollTop > window.innerHeight){
+            setScrollLimit(true)
+        }
+        else {
+            setScrollLimit(false)
+        }
+    })
 
     const [showMobileMenu, setShowMobileMenu] = useState(false)
 

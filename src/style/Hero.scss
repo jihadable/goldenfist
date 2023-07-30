@@ -6,6 +6,7 @@
     background-image: url("../assets/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 
     .tagline{
@@ -62,8 +63,6 @@
 
 @media screen and (max-width: 480px) {
     .hero{
-        background-position-x: center;
-        background-position-y: center;
         height: 100vh;
 
         .tagline{
@@ -79,7 +78,6 @@
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
     .hero{
-        background-position: center;
 
         .principles{
             gap: 1rem;
