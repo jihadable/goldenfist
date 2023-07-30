@@ -6,7 +6,7 @@
     background-image: url("../assets/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+
     position: relative;
 
     .tagline{
@@ -64,6 +64,7 @@
 @media screen and (max-width: 480px) {
     .hero{
         height: 100vh;
+        background-position: center;
 
         .tagline{
             font-size: 1.8rem;
