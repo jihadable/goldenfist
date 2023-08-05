@@ -3,7 +3,6 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
-import Login from "../pages/Login";
 
 export default function Router(){
 
@@ -14,7 +13,6 @@ export default function Router(){
                 <Route path="/about" exact element={<About />}></Route>
                 <Route path="/pricing" exact element={<Pricing />}></Route>
                 <Route path="/contact" exact element={<Contact />}></Route>
-                <Route path="/login" exact element={<Login />}></Route>
             </Routes>
         </BrowserRouter>
     )
