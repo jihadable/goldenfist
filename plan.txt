@@ -21,15 +21,29 @@ hero: bg-image, tagline: Unleash Your Inner Warrior
 principle: Focus, Discipline, Resilience
 gallery: 6 photos
 testimonials: 3 people
-prices: 
-$40/m: 1 meeting for a week
-$65/m: 2 meeting for a week
-$100/m: 3 meeting for a week
+
+about page:
+hero: bg-image, tagline: Find Your Balance
+about section:
+header: About Us
+content:
+left: image
+right: explanation
 
 pricing page:
+hero: bg-image, taglina: Unlock Your True Potential
 pricing section: 
 header: pricing chart
 content:
 $40/m: 1 meeting for a week
 $65/m: 2 meeting for a week
 $100/m: 3 meeting for a week
+
+contact page:
+hero: bg-image, tagline: Unite Mind and Body
+contact section:
+header: Contact Us
+content:
+left: informations: place, opening hours, info, sosmed
+right: form: name, email, message
+gMaps iframe: Kendari
