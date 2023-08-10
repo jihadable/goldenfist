@@ -2,7 +2,7 @@ import { useState } from "react"
 import logo from "../assets/golden-fist-logo.png"
 import "../style/Navbar.scss"
 
-export default function Navbar(props){
+export default function Navbar(){
 
     window.onscroll = function() {myFunction()};
 
@@ -21,9 +21,9 @@ export default function Navbar(props){
 
     return (
         <nav className="navbar">
-            <div className="navbar-logo">
+            <a href="/" className="navbar-logo">
                 <img src={logo} alt="Logo" />
-            </div>
+            </a>
             <div className={`navbar-links ${showMobileMenu ? "active" : ""}`}>
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
