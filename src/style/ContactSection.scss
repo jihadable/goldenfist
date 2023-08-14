@@ -87,7 +87,7 @@
 
                 .name,.email,.message{
                     input,textarea{
-                        padding: .5rem 1rem;
+                        padding: 1rem 1.5rem;
                         font-size: 1rem;
                         width: 100%;
                         resize: none;
@@ -95,7 +95,7 @@
                         outline: none;
                         background-color: white;
                         border-radius: .5rem;
-                        border-bottom: 2px solid $blue;
+                        border-bottom: 3px solid $blue;
                     }
                 }
 
