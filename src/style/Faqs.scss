@@ -1,0 +1,101 @@
+@import "./index.scss";
+
+.faqs{
+    width: 80vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: .2rem;
+            background-color: $gold;
+            bottom: 0;
+            right: 0;
+            border-radius: 10rem;
+        }
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        .faq{
+            display: flex;
+            flex-direction: column;
+            border-radius: .5rem;
+            border: 2px solid $blue;
+
+            &-header{
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-weight: bold;
+                cursor: pointer;
+
+                svg{
+                    color: $blue;
+                    transition: all .2s;
+
+                    &.active{
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+
+            &-answer{
+                display: flex;
+                max-height: 0;
+                overflow: hidden;
+                transition: all .2s cubic-bezier(0,1,0,1);
+
+                &.active{
+                    max-height: 999px;
+                    transition: all .2s cubic-bezier(1,0,1,0);
+                }
+
+                .answer-container{
+                    padding: 1rem 1.5rem;
+                    color: rgb(0,0,0,.8);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .faqs{
+        width: 100%;
+        padding: 0 1rem;
+
+        &-content{
+            .faq{
+                &-header{
+                    padding: 1rem;
+
+                    span{
+                        width: 85%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .faqs{
+        width: 90vw;
+    }
+}
