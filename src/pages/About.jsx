@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AboutHero from "../components/about-components/AboutHero";
 import AboutSection from "../components/about-components/AboutSection";
+import OurTeam from "../components/about-components/OurTeam";
 
 export default function About(){
 
@@ -12,6 +13,7 @@ export default function About(){
         <Navbar />
         <AboutHero />
         <AboutSection />
+        <OurTeam />
         <Footer />
         </>
     )

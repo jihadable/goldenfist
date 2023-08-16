@@ -30,8 +30,9 @@ content:
 left: image
 right: explanation
 
-pricing page:
+classes page:
 hero: bg-image, taglina: Unlock Your True Potential
+classes section: silat, karate, taekwondo, judo, kung fu, muay tai, wing chun
 pricing section: 
 header: pricing chart
 content:

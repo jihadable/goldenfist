@@ -2,11 +2,11 @@
 
 .hero{
     display: flex;
+    justify-content: center;
     height: 110vh;
     background-image: url("../assets/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
     position: relative;
 
     .tagline{
@@ -26,11 +26,10 @@
     }
 
     .principles{
+        margin: auto;
         display: flex;
-        justify-content: center;
         gap: 2rem;
-        padding: 0 2rem;
-        width: 100%;
+        width: 80vw;
         position: absolute;
         top: 94%;
 

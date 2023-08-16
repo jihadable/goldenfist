@@ -1,8 +1,8 @@
-import "../../style/PricingHero.scss"
+import "../../style/ClassesHero.scss"
 
-export default function PricingHero(){
+export default function ClassesHero(){
     return (
-        <section className="pricing-hero">
+        <section className="classes-hero">
             <div className="tagline">Unlock Your <span>True Potential</span></div>
         </section>
     )

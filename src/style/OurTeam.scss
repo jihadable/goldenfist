@@ -1,0 +1,107 @@
+@import "./index.scss";
+
+.our-team{
+    width: 80vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 20%;
+            right: 0;
+            bottom: 0;
+            height: .3rem;
+            border-radius: 5rem;
+            background-color: $gold;
+        }
+    }
+
+    &-content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        .teacher{
+            display: flex;
+            flex-direction: column;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgb(0,0,0,.5);
+
+            &-info{
+                padding: 1rem;
+                padding-bottom: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                position: relative;
+                cursor: pointer;
+
+                &:hover{
+                    &::after{
+                        width: 90%;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 50%;
+                    height: 4px;
+                    background-color: $gold;
+                    bottom: 0;
+                    transition: all .2s;
+                }
+
+                .name{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                .job{
+                    color: rgb(0,0,0,.5);
+                    font-size: 1.2rem;
+                }
+
+                .sosmed{
+                    display: flex;
+                    gap: 0.5rem;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .our-team{
+        width: 100%;
+        padding: 0 1rem;
+
+        &-content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .our-team{
+        width: 90vw;
+
+        &-content{
+            gap: 1rem;
+        }
+    }
+}

@@ -2,15 +2,15 @@
 
 .pricing{
     margin: 8rem auto;
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
+    width: 80vw;
 
     &-header{
         font-size: 2rem;
-        font-weight: 700;
+        font-weight: bold;
         position: relative;
 
         &::after{
@@ -27,12 +27,11 @@
 
     &-content{
         display: flex;
-        justify-content: space-between;
-        width: 100%;;
-        padding: 3rem 10vw;
-        padding-top: 1rem;
+        gap: 1.5rem;
+        width: 100%;
 
         .price{
+            width: 100%;
             padding: 2rem;
             display: flex;
             flex-direction: column;
@@ -55,7 +54,7 @@
 
                 span{
                     font-size: 2.5rem;
-                    color: $gold;
+                    color: $blue;
                 }
             }
 

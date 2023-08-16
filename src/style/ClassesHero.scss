@@ -1,6 +1,6 @@
 @import "./index.scss";
 
-.pricing-hero{
+.classes-hero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .pricing-hero{
+    .classes-hero{
         .tagline{
             font-size: 1.8rem;
         }

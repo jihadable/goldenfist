@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    width: 90vw;
+    width: 80vw;
     margin: 2rem auto 8rem;
 
     &-header{
@@ -81,12 +81,23 @@
 
 @media screen and (max-width: 480px) {
     .about{
+        width: 100%;
+        padding: 0 1rem;
+
         &-content{
             flex-direction: column-reverse;
 
-            .img{
-                img{
-                    width: 100%;
+            .item{
+                flex-direction: column-reverse;
+
+                &:nth-child(1){
+                    flex-direction: column-reverse;
+                }
+
+                .img{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -95,15 +106,22 @@
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
     .about{
+        width: 90vw;
+
         &-content{
             flex-direction: column-reverse;
-            align-items: center;
 
-            .img{
-                width: 70%;
+            .item{
+                flex-direction: column-reverse;
 
-                img{
-                    width: 100%;
+                &:nth-child(1){
+                    flex-direction: column-reverse;
+                }
+
+                .img{
+                    img{
+                        width: 100%;
+                    }
                 }
             }
         }

@@ -1,0 +1,88 @@
+@import "./index.scss";
+
+.classes{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 20%;
+            right: 0;
+            bottom: 0;
+            height: .3rem;
+            border-radius: 5rem;
+            background-color: $gold;
+        }
+    }
+
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        width: 80vw;
+
+        .class{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgb(0,0,0,.5);
+
+            img{
+                width: 100%;
+            }
+
+            &-info{
+                position: absolute;
+                bottom: 1.5rem;
+                left: 1.5rem;
+                display: flex;
+                flex-direction: column;
+
+                .title{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: $gold;
+                }
+
+                .teacher{
+                    display: flex;
+                    align-items: center;
+                    color: $white;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .classes{
+        &-content{
+            width: 100%;
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .classes{
+        &-content{
+            width: 90vw;
+            gap: 1rem;
+        }
+    }
+}
