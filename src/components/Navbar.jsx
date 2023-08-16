@@ -4,8 +4,6 @@ import "../style/Navbar.scss"
 
 export default function Navbar(){
 
-    window.onscroll = function() {myFunction()};
-
     const [scrollLimit, setScrollLimit] = useState(false)
 
     window.addEventListener("scroll", function(){

@@ -79,8 +79,10 @@
 
 @media screen and (max-width: 480px) {
     .pricing{
+        width: 100%;
+        padding: 0 1rem;
+
         &-content{
-            padding: 0 1rem;
             flex-direction: column;
             gap: 1.5rem;
 

@@ -7,7 +7,7 @@
     position: relative;
     margin: auto;
     width: 80vw;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
 
     &-header{
         font-size: 2rem;
@@ -124,7 +124,6 @@
 
 @media screen and (max-width: 480px) {
     .testimonials{
-        margin-top: 2rem;
         width: 100%;
         padding: 0 1rem;
         gap: 1rem;
@@ -168,6 +167,7 @@
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
     .testimonials{
+        margin: 5rem auto;
         width: 90vw;
 
         &-container{

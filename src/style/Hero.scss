@@ -71,6 +71,7 @@
         }
 
         .principles{
+            width: 100%;
             flex-direction: column;
             padding: 0 1rem;   
         }
@@ -79,10 +80,11 @@
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
     .hero{
+        background-position: center;
 
         .principles{
+            width: 90vw;
             gap: 1rem;
-            padding: 0 1rem;
         }
     }
 }

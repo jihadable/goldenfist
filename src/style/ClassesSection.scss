@@ -36,24 +36,47 @@
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            border-radius: 1rem;
             box-shadow: 0 0 20px rgb(0,0,0,.5);
+            z-index: 1;
+
+            &:hover{
+                .class-info{
+                    &::before{
+                        bottom: 0;
+                    }
+                }
+            }
 
             img{
                 width: 100%;
             }
 
-            &-info{
+            .class-info{
                 position: absolute;
-                bottom: 1.5rem;
-                left: 1.5rem;
+                bottom: 0;
+                padding: 1.5rem;
+                left: 0;
+                right: 0;
                 display: flex;
                 flex-direction: column;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -100%;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    background-color: rgb(0,0,0,.5);
+                    backdrop-filter: blur(5px);
+                    transition: all .2s;
+                }
 
                 .title{
                     font-size: 1.8rem;
                     font-weight: bold;
                     color: $gold;
+                    z-index: 2;
                 }
 
                 .teacher{
@@ -61,6 +84,7 @@
                     align-items: center;
                     color: $white;
                     font-weight: bold;
+                    z-index: 2;
                 }
             }
         }
@@ -74,6 +98,14 @@
             padding: 0 1rem;
             display: flex;
             flex-direction: column;
+
+            .class{
+                .class-info{
+                    &::before{
+                        bottom: 0;
+                    }
+                }
+            }
         }
     }
 }
@@ -83,6 +115,19 @@
         &-content{
             width: 90vw;
             gap: 1rem;
+
+            .class{
+                .class-info{
+
+                    &::before{
+                        bottom: 0;
+                    }
+
+                    .title{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
 }
