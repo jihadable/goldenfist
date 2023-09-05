@@ -58,7 +58,7 @@ export default function Faqs(){
                         <div className="faq" key={index}>
                             <div className="faq-header" onClick={() => {handleFaqs(index)}}>
                                 <span>{faq.question}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-chevron-down ${showFaq.includes(index) ? "active" : ""}`} width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-chevron-down ${showFaq.includes(index) ? "active" : ""}`} width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M6 9l6 6l6 -6"></path>
                                 </svg>
