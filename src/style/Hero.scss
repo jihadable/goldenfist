@@ -29,7 +29,7 @@
     .principles{
         margin: auto;
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         width: 80vw;
         position: absolute;
         top: 94%;
@@ -41,7 +41,7 @@
             background-color: white;
             border-bottom: 2px solid $gold;
             padding: 1.5rem;
-            border-radius: 3rem 3rem .2rem .2rem;
+            border-radius: 3rem 3rem 0 0;
             box-shadow: 0 7px 20px rgb(0,0,0,.2);
 
             svg{

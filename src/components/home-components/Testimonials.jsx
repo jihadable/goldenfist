@@ -11,19 +11,19 @@ export default function Testimonials(){
         {
             name: "Richar Wilson",
             job: "College Lecturer",
-            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi ex a voluptas, illo laboriosam est explicabo incidunt error dignissimos.`,
+            text: "Golden Fist not only improved my martial arts skills but also boosted my confidence.",
             img: test1
         },
         {
             name: "Robert Davis",
             job: "Firefighter",
-            text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque velit non ex temporibus soluta odio eveniet ut dolores nisi cum.`,
+            text: "Golden Fist taught me discipline and focus that I now apply to my career.",
             img: test2
         },
         {
             name: "William Miller",
             job: "Cop",
-            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quaerat accusantium laborum iusto veniam placeat quisquam corporis. Quae, doloremque molestiae.`,
+            text: "Resilience was my key takeaway at Golden Fist. It helped me overcome life's challenges.",
             img: test3
         }
     ]

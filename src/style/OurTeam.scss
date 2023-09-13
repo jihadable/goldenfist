@@ -34,9 +34,8 @@
         .teacher{
             display: flex;
             flex-direction: column;
-            border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 0 20px rgb(0,0,0,.5);
+            box-shadow: 0 0 20px rgb(0,0,0,.2);
 
             &-info{
                 padding: 1rem;

@@ -26,7 +26,7 @@ function Principles(){
                 <path d="M19 12l2 0"></path>
             </svg>,
             header: "Focus",
-            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa accusamus maiores sit quisquam fugit repudiandae corrupti obcaecati dolorum dolore omnis.`
+            text: "Focus is the cornerstone of Golden Fist, teaching our students the art of concentration. We emphasize the importance of directing your energy and attention towards your goals, whether in training or in life."
         },
         {
             svg: 
@@ -39,7 +39,7 @@ function Principles(){
                 <path d="M20 15v6"></path>
             </svg>,
             header: "Discipline",
-            text: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi unde sapiente sit praesentium obcaecati illo, fugiat ab similique itaque nihil.`
+            text: "Discipline at Golden Fist means cultivating self-control and a strong work ethic. Our students learn to adhere to a structured training regimen and make consistent, positive choices both on and off the mat."
         },
         {
             svg: 
@@ -51,7 +51,7 @@ function Principles(){
                 <path d="M17 9.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47"></path>
             </svg>,
             header: "Resilience",
-            text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima fugiat veniam nulla porro officia velit delectus libero ut illum.`
+            text: "Resilience is a core value at Golden Fist. We instill the ability to bounce back from setbacks, teaching students to embrace challenges as opportunities for growth and to never give up on their martial arts journey."
         }
     ]
 

@@ -42,7 +42,7 @@ export default function ContactSection(){
                     <div className="info">
                         <div className="info-header">Information</div>
                         <div className="info-items">
-                            <div className="item">+62 823 5239 5596</div>
+                            <div className="item">+62 812 3456 7890</div>
                             <div className="item">goldenfist@email.com</div>
                         </div>
                     </div>

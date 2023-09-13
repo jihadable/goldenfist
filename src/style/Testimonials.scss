@@ -35,7 +35,7 @@
         .testimonial-content{
             display: flex;
             gap: 2rem;
-            padding-top: 3rem;
+            padding-top: 5.5rem;
             transition: all .5s;
 
             &.test1{
@@ -64,7 +64,6 @@
 
                         img{
                             width: 20vw;
-                            border-radius: 0 5rem 0 0;
                         }
                     }
 
