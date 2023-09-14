@@ -21,7 +21,7 @@ export default function Footer(){
         </svg>
     ]
 
-    const footerLink = ["Help center", "FAQs", "Terms", "Blog"]
+    const footerLink = ["Help center", "Terms"]
 
     return (
         <footer className="footer">
@@ -31,15 +31,6 @@ export default function Footer(){
                 </div>
                 <div className="tagline">Unleash Your Inner Warrior</div>
             </div>
-            {/* <div className="footer-links">
-            {
-                footerLink.map((link, index) => {
-                    return (
-                        <div className="link" key={index}>{link}</div>
-                    )
-                })
-            }
-            </div> */}
             <div className="footer-right">
                 <div className="footer-links">
                 {

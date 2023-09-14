@@ -3,7 +3,7 @@ import "../../style/ContactHero.scss"
 export default function ContactHero(){
     return (
         <section className="contact-hero">
-            <div className="tagline"><span>Unite Mind</span> and Body</div>
+            <div className="tagline">Unite Mind <span>and Body</span></div>
         </section>
     )
 }

@@ -1,12 +1,12 @@
 @import "./index.scss";
 
-.classes-hero{
+.blog-hero{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url("../assets/classes.jpg");
+    background-image: url("../assets/blog.jpg");
     background-size: cover;
     background-position: center;
 
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .classes-hero{
+    .blog-hero{
         .tagline{
             font-size: 1.8rem;
         }

@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Classes from "../pages/Classes";
 import Contact from "../pages/Contact";
+import Blog from "../pages/Blog";
 
 export default function Router(){
 
@@ -12,6 +13,7 @@ export default function Router(){
                 <Route path="/" exact element={<Home />}></Route>
                 <Route path="/about" exact element={<About />}></Route>
                 <Route path="/classes" exact element={<Classes />}></Route>
+                <Route path="/blog" element={<Blog />}></Route>
                 <Route path="/contact" exact element={<Contact />}></Route>
             </Routes>
         </BrowserRouter>

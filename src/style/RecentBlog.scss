@@ -1,0 +1,98 @@
+@import "./index.scss";
+
+.recent-blog{
+    width: 80vw;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &-header{
+        font-size: 2rem;
+        font-weight: bold;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 50%;
+            height: .2rem;
+            background-color: $gold;
+            bottom: 0;
+            right: 0;
+            border-radius: 10rem;
+        }
+    }
+
+    &-content{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+
+        .item{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-bottom: 2px solid $blue;
+            box-shadow: 0 7px 20px rgb(0,0,0,.2);
+
+            .date{
+                align-self: end;
+                color: rgb(0,0,0,.3);
+            }
+
+            .title{
+                font-size: 1.2rem;
+                font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .text{
+                color: rgb(0,0,0,.7);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+            }
+
+            a{
+                padding: 0.5rem 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                width: fit-content;
+                background-color: $gold;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recent-blog{
+        width: 100%;
+        padding: 0 1rem;
+
+        &-content{
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+    .recent-blog{
+        width: 90vw;
+
+        &-content{
+            .item{
+                .text{
+                    -webkit-line-clamp: 2;
+                }
+            }
+        }
+    }
+}

@@ -9,6 +9,10 @@ export default function Faqs(){
             answer: "Golden Fist is a martial arts training center dedicated to helping individuals reach the highest level of proficiency in various martial arts disciplines.",
         },
         {
+            question: "Are there age restrictions for joining Golden Fist?",
+            answer: "No, Golden Fist welcomes martial arts enthusiasts of all ages. We have programs designed for children, teenagers, and adults, ensuring a tailored experience for everyone."
+        },
+        {
             question: "What types of martial arts are taught at Golden Fist?",
             answer: "We teach a variety of martial arts disciplines including Karate, Taekwondo, Judo, Kung Fu, and more.",
         },
@@ -56,16 +60,8 @@ export default function Faqs(){
                 faqs.map((faq, index) => {
                     return (
                         <div className="faq" key={index}>
-                            <div className="faq-header" onClick={() => {handleFaqs(index)}}>
-                                <span>{faq.question}</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" className={`icon icon-tabler icon-tabler-chevron-down ${showFaq.includes(index) ? "active" : ""}`} width="20" height="20" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M6 9l6 6l6 -6"></path>
-                                </svg>
-                            </div>
-                            <div className={`faq-answer ${showFaq.includes(index) ? "active" : ""}`}>
-                                <div className="answer-container">{faq.answer}</div>
-                            </div>
+                            <div className="faq-question">{faq.question}</div>
+                            <div className="faq-answer">{faq.answer}</div>
                         </div>
                     )
                 })

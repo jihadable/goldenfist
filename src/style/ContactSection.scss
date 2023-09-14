@@ -94,8 +94,7 @@
                         border: none;
                         outline: none;
                         background-color: white;
-                        border-radius: .5rem;
-                        border-bottom: 3px solid $blue;
+                        border-bottom: 2px solid $blue;
                     }
                 }
 
@@ -108,10 +107,8 @@
                     width: fit-content;
                     cursor: pointer;
                     font-weight: 700;
-                    border-radius: .5rem;
                     border: none;
                     background-color: $gold;
-                    box-shadow: 0 5px 15px rgb(0,0,0,.3);
                 }
             }
         }

@@ -56,11 +56,9 @@
                 border-right: 2px solid $blue;
                 padding-top: 0.5rem;
                 padding-right: .5rem;
-
                 
                 img{
                     width: 40vw;
-                    border-bottom-left-radius: .5rem;
                 }
             }
 
@@ -69,11 +67,6 @@
                 border-right: none;
                 padding-left: .5rem;
                 border-left: 2px solid $blue;
-
-                img{
-                    border-bottom-left-radius: 0;
-                    border-bottom-right-radius: .5rem;
-                }
             }
         }
     }
