@@ -4,6 +4,9 @@ import BlogHero from "../components/blog-components/BlogHero"
 import BlogSection from "../components/blog-components/BlogSection"
 
 export default function Blog(){
+
+    document.title = "Golden Fist | Blog"
+
     return (
         <>
         <Navbar />
