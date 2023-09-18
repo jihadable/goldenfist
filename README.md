@@ -7,8 +7,6 @@ Golden Fist is a martial arts learning center. The website features a landing pa
 ## Tech Stack
 » SASS
 <br/>
-» ViteJS
-<br/>
 » ReactJS 
 
 <img src="https://umarjihad.netlify.app/pic/golden-fist.png" />
