@@ -80,6 +80,14 @@ html{
             display: flex;
             gap: 1rem;
             cursor: pointer;
+
+            &:hover{
+                .info{
+                    .title{
+                        color: $blue;
+                    }
+                }
+            }
             
             .img{
                 display: flex;

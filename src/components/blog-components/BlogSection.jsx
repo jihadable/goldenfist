@@ -6,6 +6,7 @@ import women from "../../assets/women.jpg"
 import transforms_live from "../../assets/transforms_live.jpg"
 import begginers from "../../assets/begginers.jpg"
 import self_defense from "../../assets/self-defense.jpg"
+import { IconDatabase } from "@tabler/icons-react"
 
 export default function BlogSection(){
 
@@ -80,12 +81,7 @@ export default function BlogSection(){
                             </div>
                             <div className="info">
                                 <div className="date">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-database" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0"></path>
-                                        <path d="M4 6v6a8 3 0 0 0 16 0v-6"></path>
-                                        <path d="M4 12v6a8 3 0 0 0 16 0v-6"></path>
-                                    </svg>
+                                    <IconDatabase stroke={1.5} />
                                     By Admin | {item.date}
                                 </div>
                                 <div className="title">{item.title}</div>

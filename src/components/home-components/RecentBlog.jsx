@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom"
 import "../../style/RecentBlog.scss"
+import goTop from "../goTop"
 
 export default function RecentBlog(){
 
@@ -31,7 +33,7 @@ export default function RecentBlog(){
                             <div className="date">{item.date}</div>
                             <div className="title">{item.title}</div>
                             <p className="text">{item.text}</p>
-                            <a href="/blog">
+                            <Link to="/blog" onClick={goTop}>
                                 <span>Read more</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -39,7 +41,7 @@ export default function RecentBlog(){
                                     <path d="M13 18l6 -6"></path>
                                     <path d="M13 6l6 6"></path>
                                 </svg>
-                            </a>
+                            </Link>
                         </div>
                     )
                 })

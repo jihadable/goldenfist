@@ -4,6 +4,8 @@ import test2 from "../../assets/test2.jpg"
 import test3 from "../../assets/test3.jpg"
 import quote from "../../assets/quote.png"
 import { useState } from "react"
+import { IconArrowRight } from "@tabler/icons-react"
+import { IconArrowLeft } from "@tabler/icons-react"
 
 export default function Testimonials(){
 
@@ -67,20 +69,10 @@ export default function Testimonials(){
             </div>
             <div className="btns">
                 <div className="left" onClick={() => {changeTestIndex("left")}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l14 0"></path>
-                        <path d="M5 12l6 6"></path>
-                        <path d="M5 12l6 -6"></path>
-                    </svg>
+                    <IconArrowLeft stroke={1.5} />
                 </div>
                 <div className="right" onClick={() => {changeTestIndex("right")}}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-right" width="24" height="24" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M5 12l14 0"></path>
-                        <path d="M13 18l6 -6"></path>
-                        <path d="M13 6l6 6"></path>
-                    </svg>
+                    <IconArrowRight stroke={1.5} />
                 </div>
             </div>
         </section>
