@@ -74,7 +74,7 @@ export default function Navbar(){
                     <IconX stroke={1.5} />
                 </div>
             </div>
-            <div className="navbar-mobile-btn" onClick={() => {setShowMobileMenu(true)}}>
+            <div className={`navbar-mobile-btn ${scrollLimit ? "black" : ""}`} onClick={() => {setShowMobileMenu(true)}}>
                 <IconMenuDeep stroke={1.5} />
             </div>
         </nav>

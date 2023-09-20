@@ -49,6 +49,11 @@
 
     &-mobile-btn{
         display: none;
+        color: white;
+
+        &.black{
+            color: black;
+        }
     }
 }
 
