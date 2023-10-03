@@ -105,6 +105,7 @@ function BlogSkeleton(){
                 <div className="text"></div>
                 <div className="tags"></div>
             </div>
+            <div className="blog-skeleton-animation"></div>
         </div>
     )
 }
@@ -118,6 +119,7 @@ function BlogNavSkeleton(){
                 <div className="tags"></div>
                 <div className="date"></div>
             </div>
+            <div className="blog-nav-skeleton-animation"></div>
         </div>
     )
 }

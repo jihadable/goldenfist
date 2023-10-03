@@ -74,6 +74,8 @@ html{
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
 
             .img{
                 width: 100%;
@@ -109,6 +111,16 @@ html{
                     height: 1rem;
                     background-color: #ddd;
                 }
+            }
+
+            .blog-skeleton-animation{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 100%;
+                background-color: rgb(255,255,255,.05);
+                animation: skeleton_animation 1s linear infinite;
             }
         }
     }
@@ -173,6 +185,8 @@ html{
             display: flex;
             gap: 1rem;
             width: 100%;
+            position: relative;
+            overflow: hidden;
 
             .img{
                 display: flex;
@@ -201,8 +215,24 @@ html{
                     width: 75%;
                 }
             }
+
+            .blog-nav-skeleton-animation{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 100%;
+                background-color: rgb(255,255,255,.05);
+                animation: skeleton_animation 1s linear infinite;
+            }
         }
     }
+}
+
+@keyframes skeleton_animation {
+    0% {transform: translateX(-150%) skewX(-20deg);}
+    50% {transform: translateX(-60%) skewX(-20deg);}
+    100% {transform: translateX(150%) skewX(-20deg);}
 }
 
 @media screen and (max-width: 480px) {
