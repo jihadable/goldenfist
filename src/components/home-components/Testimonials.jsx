@@ -6,6 +6,8 @@ import quote from "../../assets/quote.png"
 import { useState } from "react"
 import { IconArrowRight } from "@tabler/icons-react"
 import { IconArrowLeft } from "@tabler/icons-react"
+import { useRef } from "react"
+import { useEffect } from "react"
 
 export default function Testimonials(){
 

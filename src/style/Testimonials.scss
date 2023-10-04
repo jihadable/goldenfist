@@ -34,8 +34,8 @@
         .testimonial-content{
             display: flex;
             gap: 2rem;
-            padding-top: 5.5rem;
             transition: all .5s;
+            position: relative;
 
             &.test1{
                 transform: translateX(calc(-80vw - 2rem));
@@ -48,18 +48,15 @@
             .testimonial{
                 display: flex;
                 border: 1rem solid #ccc;
-                padding: 2rem;
+                padding: 1rem;
                 width: 80vw;
-                position: relative;
                 
                 &-info{
+                    width: 100%;
                     display: flex;
-                    gap: 1rem;
 
                     .img{
                         display: flex;
-                        position: absolute;
-                        bottom: 2rem;
 
                         img{
                             width: 20vw;
@@ -69,8 +66,7 @@
                     .test-info{
                         display: flex;
                         flex-direction: column;
-                        padding: 1rem 0;
-                        padding-left: calc(20vw + 1rem);
+                        padding: 1rem;
                         padding-right: 1rem;
                         background-color: $blue;
 
@@ -101,10 +97,10 @@
 
     .btns{
         display: flex;
-        gap: 1rem;
+        gap: .5rem;
         position: absolute;
-        right: 2rem;
-        bottom: 2rem;
+        right: 2.5rem;
+        bottom: 2.5rem;
 
         .left,.right{
             display: flex;
@@ -170,7 +166,6 @@
 
         &-container{
             .testimonial-content{
-                padding-top: 1rem;
 
                 &.test1{
                     transform: translateX(calc(-90vw - 2rem));
@@ -183,7 +178,6 @@
                 .testimonial{
                     width: 90vw;
                     padding: 1rem;
-                    border: .5rem solid #ccc;
 
                     &-info{
 
