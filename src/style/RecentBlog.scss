@@ -14,14 +14,14 @@
         position: relative;
 
         &::after{
-            content: "";
             position: absolute;
-            width: 50%;
-            height: .2rem;
-            background-color: $gold;
-            bottom: 0;
+            content: "";
+            width: 2rem;
             right: 0;
-            border-radius: 10rem;
+            bottom: 0;
+            height: .3rem;
+            border-radius: 5rem;
+            background-color: $gold;
         }
     }
 
