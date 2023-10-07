@@ -1,14 +1,12 @@
 import { IconFocus2 } from "@tabler/icons-react"
-import "../../style/Hero.scss"
+import "../../style/HomeHero.scss"
 import { Icon24Hours } from "@tabler/icons-react"
 import { IconHandGrab } from "@tabler/icons-react"
 
-export default function Hero(){
+export default function HomeHero(){
     return (
-        <section className="hero">
-            <div className="tagline">
-                Unleash Your <span>Inner Warrior</span>
-            </div>
+        <section className="home-hero">
+            <div className="tagline">Unleash Your Inner Warrior</div>
             <Principles />
         </section>
     )

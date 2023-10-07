@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import ContactSection from "../components/contact-components/ContactSection";
 import Footer from "../components/Footer"
-import ContactHero from "../components/contact-components/ContactHero";
+import Hero from "../components/Hero";
 
 export default function Contact(){
 
@@ -10,7 +10,7 @@ export default function Contact(){
     return (
         <>
         <Navbar scrollLimit={true} />
-        <ContactHero />
+        <Hero text={"Unite Mind and Body"} page={"contact"} />
         <ContactSection />
         <Footer />
         </>

@@ -1,9 +1,9 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import AboutHero from "../components/about-components/AboutHero";
 import AboutSection from "../components/about-components/AboutSection";
 import OurTeam from "../components/about-components/OurTeam";
 import Faqs from "../components/about-components/Faqs";
+import Hero from "../components/Hero";
 
 export default function About(){
 
@@ -12,7 +12,7 @@ export default function About(){
     return (
         <>
         <Navbar />
-        <AboutHero />
+        <Hero text={"Find Your Balance"} page={"about"} />
         <AboutSection />
         <OurTeam />
         <Faqs />

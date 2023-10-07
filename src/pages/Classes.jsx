@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
-import ClassesHero from "../components/classes-components/ClassesHero";
 import ClassesSection from "../components/classes-components/ClassesSection";
 import PricingSection from "../components/classes-components/PricingSection";
+import Hero from "../components/Hero";
 
 export default function Classes(){
 
@@ -11,7 +11,7 @@ export default function Classes(){
     return (
         <>
         <Navbar />
-        <ClassesHero />
+        <Hero text={"Unlock Your True Potential"} page={"classes"} />
         <ClassesSection />
         <PricingSection />
         <Footer />

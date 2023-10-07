@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import BlogHero from "../components/blog-components/BlogHero"
+import Hero from "../components/Hero"
 import BlogSection from "../components/blog-components/BlogSection"
 
 export default function Blog(){
@@ -10,7 +10,7 @@ export default function Blog(){
     return (
         <>
         <Navbar />
-        <BlogHero />
+        <Hero text={"Hearts Find Harmony"} page={"blog"} />
         <BlogSection />
         <Footer />
         </>
