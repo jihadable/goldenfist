@@ -5,10 +5,11 @@ import { useState, useEffect } from "react"
 export default function BlogSection(){
 
     const [blogData, setBlogData] = useState(null)
+    const blog_api_endpoint = import.meta.env.VITE_BLOG_API_ENDPOINT
 
     useEffect(() => {
         setTimeout(async() => {
-            let response = await fetch("https://jihad-api.000webhostapp.com/goldenfist/blogs/")
+            let response = await fetch(blog_api_endpoint)
             response = await response.json()
             response = response.map((item, index) => ({...item, tags: JSON.parse(item.tags), date: getDate(1 + 7 * index)}))
 
