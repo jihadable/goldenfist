@@ -52,17 +52,17 @@ export default function Testimonials(){
                     testimonials.map((test, index) => {
                         return (
                             <div className="testimonial" key={index}>
-                                <div className="testimonial-info">
-                                    <div className="img">
-                                        <img src={test.img} alt={test.name} />
-                                    </div>
-                                    <div className="test-info">
-                                        <img src={quote} alt="Quote" />
-                                        <div className="text">{test.text}</div>
-                                        <div className="name">{test.name}</div>
-                                        <div className="job">{test.job}</div>
-                                    </div>
+                                <div className="img">
+                                    <img src={test.img} alt={test.name} />
                                 </div>
+                                <div className="test-info">
+                                    <img src={quote} alt="Quote" />
+                                    <div className="text">{test.text}</div>
+                                    <div className="name">{test.name}</div>
+                                    <div className="job">{test.job}</div>
+                                </div>
+                                {/* <div className="testimonial-info">
+                                </div> */}
                             </div>
                         )
                     })
