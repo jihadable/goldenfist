@@ -3,71 +3,129 @@
 .footer{
     width: 100%;
     padding: 4rem 10vw;
-    background-color: $white;
     background-color: $black;
+    color: $white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
 
-    &-left{
+    &-top{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 0.5rem;
 
-        .logo{
-            display: flex;
-    
-            img{
-                width: 6rem;
-            }
+        .text{
+            text-align: center;
         }
 
-        .tagline{
-            font-family: 'Edu SA Beginner', cursive;
-            font-size: 2rem;
-            font-weight: 700;
-            text-align: center;
-            color: $white;
+        .input-btn{
+            display: flex;
+            align-items: center;
+            width: 40vw;
+
+            @media screen and (max-width: 480px) {
+                width: 100%;
+            }
+
+            .input{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: $white;
+                padding: 0.5rem;
+                width: 100%;
+
+                svg{
+                    color: black;
+                }
+
+                input{
+                    font-size: 1rem;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+
+                }
+            }
+
+            .btn{
+                padding: 0.5rem 1rem;
+                background-color: $blue;
+                cursor: pointer;
+            }
         }
     }
 
-    &-right{
+    &-bottom{
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
+        justify-content: space-between;
 
-        .footer-links{
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        @media screen and (min-width: 481px) and (max-width: 1023px) {
+            flex-direction: column;
+            gap: 2rem;    
+        }
+
+        .left{
             display: flex;
-            gap: 1rem;
+            flex-direction: column;
+            align-items: center;
     
-            .link{
-                cursor: pointer;
-                color: $white;
-    
-                &:hover{
-                    text-decoration: underline;
+            .logo{
+                display: flex;
+        
+                img{
+                    width: 5rem;
                 }
             }
-        }
-
-        .sosmed-links{
-            display: flex;
-            gap: 1rem;
-
-            .link{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0.5rem;
-                border-radius: 50%;
-                background-color: $blue;
-                cursor: pointer;
-                color: $white;
+    
+            .tagline{
+                font-family: 'Young Serif', serif;
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
             }
         }
-
-        .copyright{
-            color: $white;
+    
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+    
+            .links{
+                display: flex;
+                gap: 1rem;
+        
+                .link{
+                    cursor: pointer;
+        
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+    
+            .sosmed{
+                display: flex;
+                gap: 1rem;
+    
+                .link{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                    background-color: $blue;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
