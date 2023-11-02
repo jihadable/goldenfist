@@ -10,7 +10,8 @@ export default function Contact(){
     return (
         <>
         <Navbar scrollLimit={true} />
-        <Hero text={"Unite Mind and Body"} page={"contact"} />
+        {/* Unite Mind and Body */}
+        <Hero text={"心と体を一つにする"} page={"contact"} />
         <ContactSection />
         <Footer />
         </>

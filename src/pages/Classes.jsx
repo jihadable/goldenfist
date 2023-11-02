@@ -11,7 +11,7 @@ export default function Classes(){
     return (
         <>
         <Navbar />
-        <Hero text={"Unlock Your True Potential"} page={"classes"} />
+        <Hero text={"あなたの真の可能性を解き放つ"} page={"classes"} />
         <ClassesSection />
         <PricingSection />
         <Footer />

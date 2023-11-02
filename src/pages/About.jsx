@@ -12,7 +12,8 @@ export default function About(){
     return (
         <>
         <Navbar />
-        <Hero text={"Find Your Balance"} page={"about"} />
+        {/* Find Your Balance */}
+        <Hero text={"バランスを見つける"} page={"about"} />
         <AboutSection />
         <OurTeam />
         <Faqs />

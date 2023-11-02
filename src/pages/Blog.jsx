@@ -10,7 +10,8 @@ export default function Blog(){
     return (
         <>
         <Navbar />
-        <Hero text={"Hearts Find Harmony"} page={"blog"} />
+        {/* Hearts Find Harmony */}
+        <Hero text={"ハート・ファインド・ハーモニー"} page={"blog"} />
         <BlogSection />
         <Footer />
         </>

@@ -6,7 +6,8 @@ import { IconHandGrab } from "@tabler/icons-react"
 export default function HomeHero(){
     return (
         <section className="home-hero">
-            <div className="tagline">Unleash Your Inner Warrior</div>
+            {/* Unleash Your Inner Warrior */}
+            <div className="tagline">内なる戦士を解き放て</div>
             <Principles />
         </section>
     )
