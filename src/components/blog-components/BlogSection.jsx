@@ -120,7 +120,7 @@ export default function BlogSection(){
                 blogData &&
                 blogData.map((item, index) => {
                     return (
-                        <a href={`/blog#${item.title.replace(" ", "_").toLowerCase()}`} className="nav-item" key={index}>
+                        <a href={`/blog#${item.title.replaceAll(" ", "_").toLowerCase()}`} className="nav-item" key={index}>
                             <div className="img">
                                 <img src={item.img} alt="Image" />
                             </div>
