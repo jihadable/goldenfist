@@ -1,11 +1,11 @@
-import "../../style/ClassesSection.scss"
-import silatImg from "../../assets/silat.jpg"
+import judoImg from "../../assets/judo.jpg"
 import karateImg from "../../assets/karate.jpg"
 import kungfuImg from "../../assets/kung-fu.jpg"
-import judoImg from "../../assets/judo.jpg"
-import taekwondoImg from "../../assets/taekwondo.jpg"
 import muayThaiImg from "../../assets/muay-thai.jpg"
+import silatImg from "../../assets/silat.jpg"
+import taekwondoImg from "../../assets/taekwondo.jpg"
 import wingChunImg from "../../assets/wing-chun.jpg"
+import "../../style/ClassesSection.scss"
 
 export default function ClassesSection(){
 
@@ -49,7 +49,7 @@ export default function ClassesSection(){
 
     return (
         <section className="classes">
-            <div className="classes-header">Our Classes</div>
+            <div className="classes-header">Kelas Kamu</div>
             <div className="classes-content">
             {
                 classes.map((kelas, index) => {

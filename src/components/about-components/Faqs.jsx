@@ -1,60 +1,37 @@
-import { useState } from "react"
 import "../../style/Faqs.scss"
 
 export default function Faqs(){
 
     const faqs = [
         {
-            question: "What is Golden Fist?",
-            answer: "Golden Fist is a martial arts training center dedicated to helping individuals reach the highest level of proficiency in various martial arts disciplines.",
+            question: "Apa itu Golden Fist?",
+            answer: "Golden Fist adalah pusat pelatihan bela diri. Golden Fist berdedikasi untuk membantu individu meraih potensi terbaik mereka.",
         },
         {
-            question: "Are there age restrictions for joining Golden Fist?",
-            answer: "No, Golden Fist welcomes martial arts enthusiasts of all ages. We have programs designed for children, teenagers, and adults, ensuring a tailored experience for everyone."
+            question: "Apa ada batasan usia untuk bisa bergabung dengan Golden Fist?",
+            answer: "Tidak ada, Golden Fist siap menerima setiap orang dari segala usia. Kami memiliki program untuk setiap kalangan mulai dari anak-anak, remaja, dan orang dewasa."
         },
         {
-            question: "What types of martial arts are taught at Golden Fist?",
-            answer: "We teach a variety of martial arts disciplines including Karate, Taekwondo, Judo, Kung Fu, and more.",
+            question: "Apa saja bela diri yang diajarkan di Golden Fist?",
+            answer: "Kami mengajar beberapa bela diri seperti Karate, Taekwondo, Judo, Kung Fu.",
         },
         {
-            question: "Who are the instructors at Golden Fist?",
-            answer: "Our instructors are martial arts experts with extensive experience in their respective disciplines. They are dedicated to helping you achieve your maximum potential.",
+            question: "Siapa saja pelatih di Golden Fist?",
+            answer: "Pelatih kami merupakan ahli dari bela diri dan memiliki segudang pengalaman. Mereka berdedikasi untuk membantu Anda mencapai potensi maksimal.",
         },
         {
-            question: "Is Golden Fist suitable for beginners?",
-            answer: "Yes, Golden Fist welcomes all levels of experience, including beginners. Our instructors will work with you to build a strong foundation.",
+            question: "Apakah Golden Fist ramah dengan pemula?",
+            answer: "Tentu saja!, Golden Fist menerima semua level pengalaman termasuk pemula. Pelatih kami akan mambantumu untuk membangun pondasi bela diri yang kuat.",
         },
         {
-            question: "What are the benefits of learning martial arts at Golden Fist?",
-            answer: "Learning martial arts at Golden Fist not only enhances your physical skills but also helps develop discipline, confidence, and focus.",
+            question: "Apa saja manfaat dari belajar bela diri di Golden Fist?",
+            answer: "Belajar bela diri di Golden Fist tidak hanya meningkatkan kemampuan skill namun juga meningkatkan sifat disiplin, percaya diri, dan fokus.",
         }
     ]
 
-    const [showFaq, setShowFaq] = useState([])
-
-    const handleFaqs = (index) => {
-        if (!showFaq.includes(index)){
-            setShowFaq(showFaq => [...showFaq, index])
-        }
-        else {
-            let array = [...showFaq]
-            
-            let indexArray
-            for (let i = 0 ; i < array.length ; i++){
-                if (array[i] === index){
-                    indexArray = i
-                }
-            }
-
-            delete array[indexArray]
-
-            setShowFaq([...array])
-        }
-    }
-
     return (
         <section className="faqs">
-            <div className="faqs-header">FAQs</div>
+            <div className="faqs-header">Pertanyaan yang Sering Ditanyakan</div>
             <div className="faqs-content">
             {
                 faqs.map((faq, index) => {

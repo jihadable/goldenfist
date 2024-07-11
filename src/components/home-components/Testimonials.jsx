@@ -1,33 +1,30 @@
-import "../../style/Testimonials.scss"
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react"
+import { useState } from "react"
+import quote from "../../assets/quote.png"
 import test1 from "../../assets/test1.jpg"
 import test2 from "../../assets/test2.jpg"
 import test3 from "../../assets/test3.jpg"
-import quote from "../../assets/quote.png"
-import { useState } from "react"
-import { IconArrowRight } from "@tabler/icons-react"
-import { IconArrowLeft } from "@tabler/icons-react"
-import { useRef } from "react"
-import { useEffect } from "react"
+import "../../style/Testimonials.scss"
 
 export default function Testimonials(){
 
     const testimonials = [
         {
             name: "Richar Wilson",
-            job: "College Lecturer",
-            text: "Golden Fist not only improved my martial arts skills but also boosted my confidence.",
+            job: "Dosen",
+            text: "Golden Fist tidak hanya meningkatkan kemampuan bela diri saya, tapi juga meningkatkan rasa percaya diri.",
             img: test1
         },
         {
             name: "Robert Davis",
-            job: "Firefighter",
-            text: "Golden Fist taught me discipline and focus that I now apply to my career.",
+            job: "Pemadam Kebakaran",
+            text: "Golden Fist mengajarkanku disiplin dan fokus sehingga bisa menjadi seorang Pemadam Kebakaran.",
             img: test2
         },
         {
             name: "William Miller",
-            job: "Cop",
-            text: "Resilience was my key takeaway at Golden Fist. It helped me overcome life's challenges.",
+            job: "Polisi",
+            text: "Ketangguhan merukan kunci yang saya ambil dari Golden Fist. Itu membantuku melewati rintangan kehidupan.",
             img: test3
         }
     ]
@@ -45,7 +42,7 @@ export default function Testimonials(){
 
     return (
         <section className="testimonials">
-            <div className="testimonials-header">Testimonials</div>
+            <div className="testimonials-header">Testimoni</div>
             <div className="testimonials-container">
                 <div className={`testimonial-content test${testIndex}`}>
                 {
@@ -61,8 +58,6 @@ export default function Testimonials(){
                                     <div className="name">{test.name}</div>
                                     <div className="job">{test.job}</div>
                                 </div>
-                                {/* <div className="testimonial-info">
-                                </div> */}
                             </div>
                         )
                     })

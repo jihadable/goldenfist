@@ -1,7 +1,7 @@
+import img1 from "../../assets/pricing1.jpg";
+import img2 from "../../assets/pricing2.jpg";
+import img3 from "../../assets/pricing3.jpg";
 import "../../style/PricingSection.scss";
-import img1 from "../../assets/pricing1.jpg"
-import img2 from "../../assets/pricing2.jpg"
-import img3 from "../../assets/pricing3.jpg"
 
 export default function PricingSection(){
 
@@ -31,7 +31,7 @@ export default function PricingSection(){
 
     return (
         <section className="pricing">
-            <div className="pricing-header">Pricing Chart</div>
+            <div className="pricing-header">Harga Langganan</div>
             <div className="pricing-content">
             {
                 priceData.map((item, index) => {

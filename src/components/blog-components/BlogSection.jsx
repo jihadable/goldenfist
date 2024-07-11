@@ -1,13 +1,14 @@
-import "../../style/BlogSection.scss"
 import { IconDatabase } from "@tabler/icons-react"
-import { useState, useEffect } from "react"
-import culture from "../../assets/culture.jpg"
-import kids from "../../assets/kids.jpg"
-import fight from "../../assets/fight.jpg"
-import women from "../../assets/women.jpg"
-import transforms_live from "../../assets/transforms_live.jpg"
+import { useEffect, useState } from "react"
 import begginers from "../../assets/begginers.jpg"
+import culture from "../../assets/culture.jpg"
+import fight from "../../assets/fight.jpg"
+import kids from "../../assets/kids.jpg"
 import self_defense from "../../assets/self-defense.jpg"
+import transforms_live from "../../assets/transforms_live.jpg"
+import women from "../../assets/women.jpg"
+import "../../style/BlogSection.scss"
+import getDate from "../../utils/getDate"
 
 export default function BlogSection(){
 
@@ -19,59 +20,52 @@ export default function BlogSection(){
                 [
                     {
                         id: "culture",
-                        title: "A Cultural Exploration",
+                        title: "Eksplorasi Budaya",
                         img: culture,
-                        text: "Martial arts extend far beyond training mats. Join us in an exploration of the cultural and societal significance of martial arts at Golden Fist. We'll delve into its impact on art, history, and modern-day practices, highlighting the broader influence it wields in various aspects of our lives.",
-                        tags: ["culture", "society"],
-                        date: getDate(1),
+                        text: "Seni bela diri lebih dari sekadar latihan di atas matras. Bergabunglah dengan kami dalam eksplorasi makna budaya dan sosial dari seni bela diri di Golden Fist. Kami akan mendalami dampaknya terhadap seni, sejarah, dan praktik modern, menyoroti pengaruh luas yang dimilikinya dalam berbagai aspek kehidupan kita.",
+                        tags: ["budaya", "sosial"]
                     },
                     {
                         id: "kids",
-                        title: "Martial Arts for Kids",
+                        title: "Bela Diri untuk Anak-anak",
                         img: kids,
-                        text: "Uncover the myriad benefits of introducing children to the world of martial arts at Golden Fist. We'll discuss how our specialized programs foster not only physical fitness but also character development, discipline, and essential life skills, providing a strong foundation for their future.",
-                        tags: ["kids", "beginners"],
-                        date: getDate(8),
+                        text: "Temukan berbagai manfaat memperkenalkan anak-anak ke dunia seni bela diri di Golden Fist. Kami akan membahas bagaimana program khusus kami tidak hanya meningkatkan kebugaran fisik, tetapi juga pengembangan karakter, disiplin, dan keterampilan hidup yang penting, memberikan fondasi yang kuat untuk masa depan mereka.",
+                        tags: ["anak_anak", "pemula"]
                     },
                     {
                         id: "fight",
-                        title: "Beyond the Fight",
+                        title: "Di balik Pertarungan",
                         img: fight,
-                        text: "Martial arts is a way of life, a philosophy that transcends combat. Explore the profound philosophical aspects of martial arts at Golden Fist, where respect, humility, and the relentless pursuit of self-improvement are core values that shape the character of our practitioners.",
-                        tags: ["combat", "philosophy"],
-                        date: getDate(15),
+                        text: "Seni bela diri adalah sebuah cara hidup, sebuah filosofi yang lebih dari sekadar pertarungan. Jelajahi aspek filosofis yang mendalam dari seni bela diri di Golden Fist, di mana rasa hormat, kerendahan hati, dan pengejaran tanpa henti untuk perbaikan diri adalah nilai-nilai inti yang membentuk karakter para praktisi kami.",
+                        tags: ["kombat", "filosofi"]
                     },
                     {
                         id: "women",
-                        title: "Women Empowerment Through Martial Arts",
+                        title: "Wanita dalam bela diri",
                         img: women,
-                        text: "Discover the incredible journey of women in martial arts at Golden Fist. We'll delve into the profound empowerment that martial arts offers, both physically and mentally, and share the inspiring stories of female practitioners who have found strength and confidence on our mats.",
-                        tags: ["women", "inspiring"],
-                        date: getDate(22),
+                        text: "Temukan perjalanan luar biasa para wanita dalam seni bela diri di Golden Fist. Kami akan mendalami pemberdayaan mendalam yang ditawarkan seni bela diri, baik secara fisik maupun mental, dan berbagi kisah inspiratif para praktisi wanita yang telah menemukan kekuatan dan kepercayaan diri di atas matras kami.",
+                        tags: ["wanita", "inspirasi"]
                     },
                     {
                         id: "transforms_live",
-                        title: "How Martial Arts Transforms Lives",
+                        title: "Bagaimana Bela Diri Merubah Kehidupan",
                         img: transforms_live,
-                        text: "Beyond kicks and punches, martial arts is a transformative force. Explore the profound impact of martial arts training at Golden Fist on personal discipline and self-assurance, as we delve into real-life stories of individuals who have harnessed its power.",
-                        tags: ["live", "transformative", "discipline"],
-                        date: getDate(29),
+                        text: "Di balik dari tendangan dan pukulan, seni bela diri adalah kekuatan yang transformatif. Telusuri dampak mendalam latihan seni bela diri di Golden Fist terhadap disiplin diri dan keyakinan diri, saat kami mendalami kisah nyata individu yang telah memanfaatkan kekuatannya.",
+                        tags: ["hidup", "perubahan", "disiplin"]
                     },
                     {
                         id: "begginers",
-                        title: "Beginners' Guide to Martial Arts",
+                        title: "Panduan Bela Diri untuk Pemula",
                         img: begginers,
-                        text: "Embarking on your martial arts journey? Look no further. This comprehensive guide at Golden Fist will walk you through the fundamental principles, essential techniques, and the rich tapestry of experiences awaiting newcomers to the world of martial arts.",
-                        tags: ["essential", "beginners", "fundamental"],
-                        date: getDate(36),
+                        text: "Memulai perjalanan seni bela diri Anda? Jangan ragu. Panduan komprehensif di Golden Fist akan membimbing Anda melalui prinsip-prinsip dasar, teknik-teknik penting, dan berbagai pengalaman menarik yang menanti para pendatang baru dalam dunia seni bela diri.",
+                        tags: ["esensi", "pemula", "fundamental"]
                     },
                     {
                         id: "self_defense",
-                        title: "The Art of Self-Defense",
+                        title: "Seni dalam Pertahanan Diri",
                         img: self_defense,
-                        text: "Immerse yourself in the captivating world of self-defense and martial arts through Golden Fist Academy. In this article, we'll take an in-depth look at the diverse range of martial arts disciplines we offer, shedding light on how these practices not only enhance physical prowess but also foster mental fortitude and personal growth.",
-                        tags: ["self_defense", "academy"],
-                        date: getDate(43),
+                        text: "Terjunlah dalam dunia menarik bela diri dan pertahanan diri melalui Golden Fist Academy. Dalam artikel ini, kita akan mengulas secara mendalam berbagai disiplin seni bela diri yang kami tawarkan, memberikan pemahaman tentang bagaimana latihan ini tidak hanya meningkatkan kekuatan fisik tetapi juga mendorong ketangguhan mental dan pertumbuhan pribadi.",
+                        tags: ["pertahanan_diri", "akademi"]
                     }
                 ]
             )
@@ -92,7 +86,7 @@ export default function BlogSection(){
                             <div className="info">
                                 <div className="date">
                                     <IconDatabase stroke={1.5} />
-                                    By Admin | {item.date}
+                                    Oleh Admin | {getDate(7 * index + 1)}
                                 </div>
                                 <div className="title">{item.title}</div>
                                 <div className="text">{item.text}</div>
@@ -133,7 +127,7 @@ export default function BlogSection(){
                                     })
                                 }
                                 </div>
-                                <div className="date">{item.date}</div>
+                                <div className="date">{getDate(7 * index + 1)}</div>
                             </div>
                         </a>
                     )
@@ -148,13 +142,6 @@ export default function BlogSection(){
             </div>
         </section>
     )
-}
-
-function getDate(number){
-    let day = new Date()
-    day.setDate(day.getDate() - number)
-
-    return day.toDateString().slice(4)
 }
 
 function BlogSkeleton(){

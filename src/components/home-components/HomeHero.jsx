@@ -1,7 +1,5 @@
-import { IconFocus2 } from "@tabler/icons-react"
+import { Icon24Hours, IconFocus2, IconHandGrab } from "@tabler/icons-react"
 import "../../style/HomeHero.scss"
-import { Icon24Hours } from "@tabler/icons-react"
-import { IconHandGrab } from "@tabler/icons-react"
 
 export default function HomeHero(){
     return (
@@ -18,18 +16,18 @@ function Principles(){
     const principles = [
         {
             svg: <IconFocus2 stroke={1.5} />,
-            header: "Focus",
-            text: "Focus is the cornerstone of Golden Fist, teaching our students the art of concentration. We emphasize the importance of directing your energy and attention towards your goals, whether in training or in life."
+            header: "Fokus",
+            text: "Fokus menjadi kunci utama yang kami ajarkan kepada para murid kami dalam seni konsentrasi. Kami menekankan pentingnya mengarahkan energi dan perhatian Anda menuju tujuan, baik itu dalam latihan maupun kehidupan sehari-hari."
         },
         {
             svg: <Icon24Hours stroke={1.5} />,
-            header: "Discipline",
-            text: "Discipline at Golden Fist means cultivating self-control and a strong work ethic. Our students learn to adhere to a structured training regimen and make consistent, positive choices both on and off the mat."
+            header: "Disiplin",
+            text: "Di Golden Fist, disiplin berarti membudayakan kontrol diri dan etos kerja yang kuat. Para murid kami belajar untuk mematuhi regimen latihan yang terstruktur dan membuat pilihan positif secara konsisten, baik di atas maupun di luar tatami."
         },
         {
             svg: <IconHandGrab stroke={1.5} />,
-            header: "Resilience",
-            text: "Resilience is a core value at Golden Fist. We instill the ability to bounce back from setbacks, teaching students to embrace challenges as opportunities for growth and to never give up on their martial arts journey."
+            header: "Ketangguhan",
+            text: "Ketangguhan adalah nilai inti yang kami tanamkan. Kami mengajarkan kemampuan untuk bangkit dari keterpurukan, menghadapi tantangan sebagai peluang untuk berkembang, dan tidak pernah menyerah dalam perjalanan seni bela diri mereka."
         }
     ]
 

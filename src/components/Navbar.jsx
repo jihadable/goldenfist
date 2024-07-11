@@ -1,31 +1,25 @@
+import { IconArticle, IconHome, IconId, IconMail, IconMenuDeep, IconMilitaryRank, IconX } from "@tabler/icons-react"
 import { useState } from "react"
-import logo from "../assets/golden-fist-logo.png"
-import "../style/Navbar.scss"
 import { Link } from "react-router-dom"
+import logo from "../assets/golden-fist-logo.png"
 import goTop from "../components/goTop"
-import { IconX } from "@tabler/icons-react"
-import { IconMenuDeep } from "@tabler/icons-react"
-import { IconHome } from "@tabler/icons-react"
-import { IconId } from "@tabler/icons-react"
-import { IconMilitaryRank } from "@tabler/icons-react"
-import { IconArticle } from "@tabler/icons-react"
-import { IconMail } from "@tabler/icons-react"
+import "../style/Navbar.scss"
 
 export default function Navbar(){
 
     const navLinks = [
         {
-            title: "Home",
+            title: "Beranda",
             path: "/",
             svg: <IconHome stroke={1.5} />
         },
         {
-            title: "About",
+            title: "Tentang",
             path: "/about",
             svg: <IconId stroke={1.5} />
         },
         {
-            title: "Classes",
+            title: "Kelas",
             path: "/classes",
             svg: <IconMilitaryRank stroke={1.5} />
         },
@@ -35,7 +29,7 @@ export default function Navbar(){
             svg: <IconArticle stroke={1.5} />
         },
         {
-            title: "Contact",
+            title: "Kontak",
             path: "/contact",
             svg: <IconMail stroke={1.5} />
         }

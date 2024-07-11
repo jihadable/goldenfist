@@ -1,14 +1,13 @@
-import { IconMail } from "@tabler/icons-react"
+import { IconBrandInstagram, IconBrandTiktok, IconBrandYoutube, IconMail } from "@tabler/icons-react"
 import logo from "../assets/golden-fist-logo.png"
 import "../style/Footer.scss"
-import { IconBrandInstagram, IconBrandTiktok, IconBrandYoutube } from "@tabler/icons-react"
 
 export default function Footer(){
 
     const footerSosmedIcon = [
-        <IconBrandInstagram stroke={1.5} />,
-        <IconBrandTiktok stroke={1.5} />,
-        <IconBrandYoutube stroke={1.5} />
+        <IconBrandInstagram stroke={1.5} key={0} />,
+        <IconBrandTiktok stroke={1.5} key={1} />,
+        <IconBrandYoutube stroke={1.5} key={2} />
     ]
 
     const footerLink = ["Help center", "Terms"]
@@ -16,7 +15,7 @@ export default function Footer(){
     return (
         <footer className="footer">
             <div className="footer-top">
-                <div className="text">Subscribe to our newsletter now and be the first to know about Golden Fist's latest news!</div>
+                <div className="text">Langganan buletin kami sekarang dan jadilah yang pertama mengetahui berita terbaru dari Golden Fist!</div>
                 <div className="input-btn">
                     <div className="input">
                         <IconMail stroke={1.5} />
@@ -30,7 +29,7 @@ export default function Footer(){
                     <div className="logo">
                         <img src={logo} alt="Logo" />
                     </div>
-                    <div className="tagline">Unleash Your Inner Warrior</div>
+                    <div className="tagline">Gali keberanian dan potensi terbaik Anda</div>
                 </div>
                 <div className="right">
                     <div className="links">

@@ -1,30 +1,26 @@
-import { IconYoga } from "@tabler/icons-react"
-import { IconAccessible } from "@tabler/icons-react"
-import { IconMilk } from "@tabler/icons-react"
-import { IconBarbell } from "@tabler/icons-react"
+import { IconAccessible, IconArrowRight, IconBarbell, IconMilk, IconYoga } from "@tabler/icons-react"
+import { Link } from "react-router-dom"
 import facilitiesImg from "../../assets/facilities.jpg"
 import "../../style/Facilities.scss"
-import { Link } from "react-router-dom"
 import goTop from "../goTop"
-import { IconArrowRight } from "@tabler/icons-react"
 
 export default function Facilities(){
 
     const facilitiesData = [
         {
-            title: "Spacious Training Area",
+            title: "Area Latihan Luas",
             svg: <IconAccessible stroke={1.5} />
         },
         {
-            title: "State-of-the-Art Equipment",
+            title: "Peralatan Modern",
             svg: <IconBarbell stroke={1.5} />
         },
         {
-            title: "Hydration Stations",
+            title: "Penyediaan Air Minum",
             svg: <IconMilk stroke={1.5} />
         },
         {
-            title: "Meditation and Yoga Studio",
+            title: "Meditasi dan Yoga",
             svg: <IconYoga stroke={1.5} />
         }
     ]
@@ -35,8 +31,8 @@ export default function Facilities(){
                 <img src={facilitiesImg} alt="Image" />
             </div>
             <div className="content">
-                <div className="title">World-Class Training Facilities</div>
-                <div className="text">At Golden Fist, we take pride in providing world-class training facilities to support your martial arts journey.Explore the range of facilities we offer to discover how we are dedicated to your growth and success in the martial arts discipline.</div>
+                <div className="title">Fasilitas Latihan Kelas Dunia</div>
+                <div className="text">Kami bangga menyediakan fasilitas latihan kelas dunia untuk mendukung perjalanan seni bela diri Anda. Jelajahi berbagai fasilitas yang kami tawarkan untuk menemukan bagaimana kami berkomitmen pada pertumbuhan dan kesuksesan Anda dalam disiplin seni bela diri.</div>
                 <div className="facilities-content">
                     <div className="facilities-items">
                     {facilitiesData.map((item, index) => (
@@ -49,7 +45,7 @@ export default function Facilities(){
                     ))}
                     </div>
                     <Link to={"/classes"} onClick={goTop} className="btn">
-                        <span>Classes</span>
+                        <span>Semua kelas</span>
                         <IconArrowRight stroke={1.5} />
                     </Link>
                 </div>
