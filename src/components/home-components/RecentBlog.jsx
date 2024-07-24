@@ -2,7 +2,7 @@ import { IconArrowRight } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import "../../style/RecentBlog.scss"
 import getDate from "../../utils/getDate"
-import goTop from "../goTop"
+import goTop from "../../utils/goTop"
 
 export default function RecentBlog(){
 

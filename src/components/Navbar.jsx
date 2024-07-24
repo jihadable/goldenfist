@@ -2,8 +2,8 @@ import { IconArticle, IconHome, IconId, IconMail, IconMenuDeep, IconMilitaryRank
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import logo from "../assets/golden-fist-logo.png"
-import goTop from "../components/goTop"
 import "../style/Navbar.scss"
+import goTop from "../utils/goTop"
 
 export default function Navbar(){
 

@@ -2,7 +2,7 @@ import { IconAccessible, IconArrowRight, IconBarbell, IconMilk, IconYoga } from 
 import { Link } from "react-router-dom"
 import facilitiesImg from "../../assets/facilities.jpg"
 import "../../style/Facilities.scss"
-import goTop from "../goTop"
+import goTop from "../../utils/goTop"
 
 export default function Facilities(){
 
