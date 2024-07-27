@@ -1,6 +1,6 @@
-# Golden Fist 🥋 
+# Golden Fist
 
-Golden Fist is a martial arts learning center. The website features a landing page, gallery, and a variety of classes taught at Golden Fist, such as silat, karate, taekwondo, and many more.
+Golden Fist merupakan pusat pembelajaran bela diri yang menawarkan pengalaman belajar yang mendalam dan beragam.
 
 👉 [Live Demo](https://goldenfist.netlify.app/)
 
